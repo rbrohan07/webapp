@@ -44,7 +44,9 @@ const Chatbot = ({ isDarkMode, toggleDarkMode }) => {
 
     try {
       isConnectingRef.current = true;
-      const ws = new WebSocket('ws://localhost:8765');
+      const ws = new WebSocket(import.meta.env.VITE_WS_URL);
+
+      // const ws = new WebSocket('ws://localhost:8765');
       wsRef.current = ws;
 
       ws.onopen = () => {
