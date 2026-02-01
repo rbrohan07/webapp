@@ -1,0 +1,5 @@
+- [x] Add Groq API configuration (URL and key from .env)
+- [x] Introduce API_CHOICE variable (set to "groq" by default)
+- [x] Create handle_groq_request function adapted for Groq API
+- [x] Modify handle_client function to call the appropriate request handler based on API_CHOICE
+- [x] Update main function to check for the relevant API key based on API_CHOICE
